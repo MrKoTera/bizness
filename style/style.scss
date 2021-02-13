@@ -5,20 +5,28 @@
 }
 
 body{
-	background-color: #111;
+	background: url("/image/2.jpg") no-repeat;
+	position: relative;
 }
 
 .header {
 	background-color: rgba(119, 119, 119, 0.863);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
 
 }
 .container {
 	width: 1400px;
 	max-width: 100%;
 	margin: 0 auto;
+	
 }
 .header__inner {
-
+	
 }
 .header__menu {
 	
@@ -55,15 +63,25 @@ body{
 
 
 .content {
-	position: relative;
-	margin-top: 40px;
+
+	height: 100%;
+
+
 
 }
 .content__inner {
-	
+	width: 1400px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	background-color: #fff;
+
+}
+.content__block{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 90px;
 }
 
 .content__foto {
@@ -78,4 +96,6 @@ body{
 	text-align: center;
 }
 .content__text {
+	padding: 5px;
+	line-height: 1.5;
 }
